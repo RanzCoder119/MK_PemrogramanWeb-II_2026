@@ -1,12 +1,22 @@
 # 📚 Buku Tamu Digital Sekolah
 
-![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?logo=mysql&logoColor=white)
+[![Run on Replit](https://replit.com/badge/github/RanzCoder119/MK_PemrogramanWeb-II_2026)](https://replit.com/github/RanzCoder119/MK_PemrogramanWeb-II_2026)&nbsp;
+![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?logo=php&logoColor=white)&nbsp;
+![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?logo=mysql&logoColor=white)&nbsp;
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)
 
-Aplikasi web sederhana untuk mencatat data kunjungan tamu ke sekolah menggunakan PHP, MySQL, dan Bootstrap 5.
+---
 
-**Mata Kuliah:** Pemrograman Web II | **Kelas:** IF405 | **NIM:** 230401010104
+## 🎓 Student Information
+
+| | |
+|---|---|
+| **Name** | Ranu Ratmaja |
+| **NIM** | 230401010104 |
+| **University** | UNSIA — Universitas Siber Asia |
+| **Prodi** | PJJ — S1 Informatika |
+| **Class** | IF405 — Pemrograman Web II |
+| **Tugas** | UTS — Buku Tamu Digital Sekolah |
 
 ---
 
@@ -50,27 +60,27 @@ UTS_RANU_RATMAJA_230401010104/
 
 ---
 
-## 🗄️ Struktur Database
-
-### Tabel: `buku_tamu`
+## 🗄️ Struktur Database — Tabel `buku_tamu`
 
 | Kolom | Tipe | Atribut | Deskripsi |
 |-------|------|---------|-----------|
-| id | INT(11) | AUTO_INCREMENT, PRIMARY KEY | ID unik |
+| id | INT(11) | AUTO_INCREMENT, PK | ID unik |
 | nama | VARCHAR(100) | NOT NULL | Nama lengkap tamu |
-| instansi | VARCHAR(100) | NOT NULL | Instansi/asal tamu |
+| instansi | VARCHAR(100) | NOT NULL | Instansi / asal tamu |
 | tujuan | TEXT | NOT NULL | Tujuan kedatangan |
 | tanggal | DATE | NOT NULL | Tanggal kedatangan |
 | waktu | TIME | NOT NULL | Waktu kedatangan |
 
 ---
 
-## 🚀 Cara Instalasi
+## 🚀 Cara Instalasi (Lokal)
 
 1. Copy folder ke `htdocs/` XAMPP
 2. Import `db_bukutamu.sql` via phpMyAdmin
 3. Sesuaikan `koneksi.php` dengan kredensial MySQL
 4. Akses `http://localhost/UTS_RANU_RATMAJA_230401010104/`
+
+> **Atau jalankan langsung online:** klik tombol **Run on Replit** di atas ☝️
 
 ---
 
@@ -82,4 +92,4 @@ UTS_RANU_RATMAJA_230401010104/
 
 ---
 
-*Dibuat oleh: Ranu Ratmaja — NIM: 230401010104 — UTS Pemrograman Web II 2026*
+*© 2026 Ranu Ratmaja — NIM 230401010104 — UTS Pemrograman Web II — UNSIA*
