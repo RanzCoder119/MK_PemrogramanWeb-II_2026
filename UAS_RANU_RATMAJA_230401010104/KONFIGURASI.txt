@@ -1,0 +1,36 @@
+KONFIGURASI APLIKASI PERPUSTAKAAN BUKU DIGITAL
+==============================================
+
+URL aplikasi      : http://localhost:8080/
+Web server        : PHP built-in server (php spark serve) atau Apache/Nginx
+                    (dokumen root mengarah ke folder: public/)
+
+DATABASE (MySQL/MariaDB)
+------------------------
+Host              : 127.0.0.1
+Port              : 3306
+Nama database     : perpustakaan_digital
+Username          : root
+Password          : (kosong - sesuaikan dengan lingkungan masing-masing)
+Driver            : MySQLi
+Charset           : utf8mb4
+File SQL          : database/perpustakaan_digital.sql
+
+AKUN LOGIN
+----------
+admin       / admin123        (role: admin)
+pustakawan  / pustakawan123   (role: pustakawan)
+
+FILE KONFIGURASI UTAMA
+----------------------
+.env                    : baseURL, environment, koneksi database
+app/Config/Routes.php   : routing + filter session 'auth'
+app/Config/Filters.php  : pendaftaran alias filter
+
+CARA MENJALANKAN (RINGKAS)
+--------------------------
+1. mysql -u root -p -e "CREATE DATABASE perpustakaan_digital CHARACTER SET utf8mb4;"
+2. mysql -u root -p perpustakaan_digital < database/perpustakaan_digital.sql
+   (atau: php spark migrate --all && php spark db:seed DatabaseSeeder)
+3. php spark serve
+4. Buka http://localhost:8080 lalu login.

@@ -10,6 +10,7 @@ Universitas Siber Asia (UNSIA) — Kelas IF405 — 2026
 | Folder | Tugas | Teknologi |
 |--------|-------|-----------|
 | [`UTS_RANU_RATMAJA_230401010104`](./UTS_RANU_RATMAJA_230401010104) | **Buku Tamu Digital Sekolah** — UTS | PHP, MySQL, Bootstrap 5 |
+| [`UAS_RANU_RATMAJA_230401010104`](./UAS_RANU_RATMAJA_230401010104) | **Perpustakaan Buku Digital** — UAS (CRUD, Session, Searching, Pagination) | CodeIgniter 4, MySQL |
 
 ---
 
